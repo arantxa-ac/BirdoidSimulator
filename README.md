@@ -1,4 +1,6 @@
-WELCOME TO THE BOID SIMULATOR
+Birdoid Simulator
+-----------------
+Assignment for Fundamentals of Computer Animation course. The purpose of this assignment was to simulate a flock of birds using collision avoidance and attraction forces. Reynolds’s model of schools, flocks, and herds was used to accomplish the task.
 
 To open the panel press P.
 To change alignment constant modify ka in the panel.
