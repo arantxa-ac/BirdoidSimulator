@@ -18,8 +18,19 @@ void ParticleModel::reset() {
 
   // setup particles
   for (int i = -15; i <= 15; ++i) {
-    particles.push_back(Particle({i, i, i}, {i, i, i}));
-    particles.push_back(Particle({-i, -i, i }, { -i, -i, -i }));
+    int vx, vy, vz;
+    vec3f velocities;
+    for (int j = 0; j < 3; j++) {
+        int random = rand() % 100;
+        if (random > 50) velocities[j] = 1;
+        else velocities[j] = -1;
+    }
+    vx = velocities[0];
+    vy = velocities[1];
+    vz = velocities[2];
+
+    particles.push_back(Particle({i, i, i}, {vx, vy, vz}));
+    particles.push_back(Particle({-i, -i, -i }, { -vx, -vy, -vz }));
   }
 
   //setup planes
