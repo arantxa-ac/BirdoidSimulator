@@ -27,3 +27,5 @@ Compilation
 ## How to Run
 
     build/simple
+    
+    this program requires the glm and glfw libraries
